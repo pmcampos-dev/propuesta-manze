@@ -315,7 +315,30 @@ slides.push(`
   ${foot(10)}
 </div>`);
 
-/* 11 — CIERRE */
+/* 11 — ACOMPAÑAMIENTO ESTRATÉGICO */
+const strat = [
+  ["robot","IA alrededor de tu negocio","Desarrollamos inteligencia artificial a la medida: detectamos qué procesos automatizar y mejorar con IA en cada área."],
+  ["trending-up","Eficiencia y márgenes","Operamos con IA para cuidar tus márgenes y mantenerte a la vanguardia — que no te quedes atrás en la curva."],
+  ["chess","Decisiones de negocio","Contratación, finanzas, recompra de inventario y lifetime value: te acompañamos más allá de la pauta."],
+];
+slides.push(`
+<div class="slide">
+  <div class="eyebrow">Más allá de los anuncios</div>
+  <h1 class="t">Acompañamiento estratégico para todo el negocio</h1>
+  <p class="lead">No solo corremos tu pauta: nos involucramos en las decisiones que mueven la operación completa.</p>
+  <div class="grid" style="grid-template-columns:repeat(3,1fr); margin-top:28px;">
+    ${strat.map(([i,h,d])=>`<div class="card top" style="height:236px;"><div class="ico"><i class="ti ti-${i}"></i></div>
+      <h3 style="margin-top:18px;">${h}</h3><p class="desc" style="font-size:14px;">${d}</p></div>`).join("")}
+  </div>
+  <div class="card hi" style="display:flex; align-items:center; gap:22px; margin-top:24px;">
+    <div class="ico"><i class="ti ti-arrow-up-right"></i></div>
+    <div style="font-size:16.5px; line-height:1.5;"><b style="font-weight:600;">Tu crecimiento es nuestro mayor interés.</b>
+    <span style="color:var(--mutedHi);"> Por eso participamos activamente en las decisiones estratégicas del negocio — porque todas, al final, repercuten en las ventas de la tienda.</span></div>
+  </div>
+  ${foot(11)}
+</div>`);
+
+/* 12 — CIERRE */
 slides.push(`
 <div class="slide" style="justify-content:center; background:#10141a;">
   <div class="rings" style="left:50px; top:50%; transform:translateY(-50%);">
